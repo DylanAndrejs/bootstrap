@@ -80,13 +80,13 @@
         <!-- Use a container class that will set a max-width at each breakpoint -->
         <div class="container">
           <!-- Adjust all h2 headings to have a margin bottom using the value 4 -->
-          <h2>Section heading</h2>
+          <h2 class="mb-4">Section heading</h2>
           <!-- Using the grid system, adjust the following so that the text in both divs are 100% until the small breakpoint where it then divides into 2 evenly distributed columns and stays that way as the screen expands -->
-          <div>
-            <div>
+          <div class="row">
+            <div class="col-sm-6">
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam exercitationem voluptates dolore necessitatibus eius? Deserunt excepturi pariatur assumenda nemo laudantium fugit aliquid mollitia? Reiciendis consequuntur distinctio aperiam magni magnam asperiores.</p>
             </div>
-            <div>
+            <div class="col-sm-6">
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam exercitationem voluptates dolore necessitatibus eius? Deserunt excepturi pariatur assumenda nemo laudantium fugit aliquid mollitia? Reiciendis consequuntur distinctio aperiam magni magnam asperiores.</p>
             </div>
           </div>
@@ -94,49 +94,87 @@
       </section>
 
       <!-- Add padding to the top and bottom of the section -->
-      <section id="cards" class="py-5">
+      <section id="cards">
         <!-- Use a container class that will set a max-width at each breakpoint -->
-        <div>
+        <div class="container py-5">
           <!-- Adjust all h2 headings to have a margin bottom using the value 4 -->
-          <h2>Section heading</h2>
+          <h2 class="mb-4">Section heading</h2>
 
           <!-- Using the grid system, adjust the following so that the cards are 100% until the small breakpoint where it then divides to use 6 columns each, then again at the large breakpoint each card will span 3 columns each -->
           <!-- Add a gutter y using the value 4 -->
-          <div>
-            <div>
+         <div class="row gy-4"> 
+            <div class="col-lg-3 col-sm-6">
               <!-- Use the card component and set to use the dark bg with light text -->
               <!-- Update snippet to include the image being used in the screenshot -->
               <!-- Update button to use light button theme -->
 
-            </div>
+           
 
-            <div>
-              <!-- Card goes here -->
-            </div>
+              
+                <div class="card bg-dark text-white">
+                  <img src="abstract.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+                <!-- Card goes here -->
+              </div>
 
-            <div>
-              <!-- Card goes here -->
-            </div>
 
-            <div>
-              <!-- Card goes here -->
-            </div>
+              <div class="col-lg-3 col-sm-6">
+                <div class="card bg-dark text-white">
+                  <img src="abstract.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+                <!-- Card goes here -->
+              </div>
+
+              <div class="col-lg-3 col-sm-6">
+                <div class="card bg-dark text-white">
+                  <img src="abstract.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+                <!-- Card goes here -->
+              </div>
+
+              <div class="col-lg-3 col-sm-6">
+                <div class="card bg-dark text-white">
+                  <img src="abstract.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+                <!-- Card goes here -->
+              </div>
           </div>
         </div>
+      </div>
       </section>
 
       <!-- Add padding to the top and bottom of the section -->
       <!-- Set section background color to use the dark theme with light text -->
-      <section class="py-5" >
+      <section class="py-5 bg-dark text-white" >
         <!-- Use a container class that will set a max-width at each breakpoint -->
-        <div>
+        <div class="container">
           <!-- Adjust all h2 headings to have a margin bottom using the value 4 -->
-          <h2>Some heading</h2>
+          <h2 class="mb-4">Some heading</h2>
           <!-- Using the grid system, adjust the first image and text are 100% until the large breakpoint where it then divides into 2 evenly distributed columns and stays that way as the screen expands. -->
-          <div>
-            <div>
+          <div class="row">
+            <div class="col-lg-6">
               <!-- Adjust the img with a class to make it responsive (fluid) -->
-              <img src="images/abstract.jpg" alt="">
+              <img src="images/abstract.jpg" alt="" class="container-fluid">
             </div>
             <div>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam exercitationem voluptates dolore necessitatibus eius? Deserunt excepturi pariatur assumenda nemo laudantium fugit aliquid mollitia? Reiciendis consequuntur distinctio aperiam magni magnam asperiores.</p>
@@ -144,10 +182,10 @@
           </div>
           <!-- Using the grid system, adjust the second image and text are 100% until the large breakpoint where it then divides into 2 evenly distributed columns and stays that way as the screen expands. -->
           <!-- For the two pieces of content here, swap the order using a flex utility class  -->
-          <div>
-            <div>
+          <div class="row d-flex flex-row-reverse">
+            <div class="col-lg-6">
               <!-- Adjust the img with a class to make it responsive (fluid) -->
-              <img src="images/abstract.jpg" alt="">
+              <img src="images/abstract.jpg" alt="" class="container-fluid">
             </div>
             <div>
               <div>
